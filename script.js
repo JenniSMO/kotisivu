@@ -1,6 +1,6 @@
 const revealTargets = document.querySelectorAll(".reveal");
 const navLinks = document.querySelectorAll(".nav-link");
-const sectionIds = ["home", "projects", "about", "support"];
+const sectionIds = ["home", "about", "support"];
 const heroVideo = document.querySelector(".hero video");
 
 const revealObserver = new IntersectionObserver(

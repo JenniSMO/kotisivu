@@ -346,6 +346,51 @@ section { scroll-margin-top: 90px; }
   margin-top: 6px;
 }
 
+.contact-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.contact-card {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 12px;
+  padding: 16px;
+  background: linear-gradient(160deg, rgba(15, 15, 15, 0.72), rgba(15, 15, 15, 0.55));
+  backdrop-filter: blur(4px);
+  transition: transform .25s ease, border-color .25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.contact-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.contact-card p {
+  margin: 0 0 10px;
+  color: #d2d2d2;
+}
+
+.contact-card > a {
+  width: fit-content;
+  color: #f7f7f7;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding-bottom: 2px;
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.contact-card > a:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.72);
+}
+
 .contact-links { display: grid; gap: 10px; }
 .contact-links a {
   width: fit-content;
