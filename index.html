@@ -1,131 +1,221 @@
 <!DOCTYPE html>
 <html lang="fi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NexaLife</title>
-    <meta name="description" content="NexaLife - hyvinvointijärjestelmä arjen etenemiseen." />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="noise"></div>
-    <header class="topbar">
-      <a class="logo" href="#home">
-        <img src="assets/images/nexanobg.png" alt="NexaLife logo" />
-        <span>NexaLife</span>
-      </a>
-      <nav class="menu">
-        <a class="nav-link" href="#home">Koti</a>
-        <a class="nav-link" href="#about">Tietoa</a>
-        <a class="nav-link" href="#support">Yhteys</a>
-      </nav>
-    </header>
-
-    <main>
-      <section id="home" class="hero hero-fullbleed reveal">
-        <video autoplay muted loop playsinline poster="assets/images/taustatesti.jpeg">
-          <source src="assets/videos/taustavideo.mp4" type="video/mp4" />
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-inner">
-          <p class="hero-tag">Suomalainen luonto x moderni hyvinvointi</p>
-          <h1>NexaLife</h1>
-          <h2>Hyvinvointijärjestelmä päivittäiseen etenemiseen</h2>
-          <p class="hero-text">
-            NexaLife on tehty sinulle, joka haluat lisää selkeyttä ilman turhaa
-            kuormitusta. Suunnittele päivä, rakenna rutiineja ja etene
-            tavoitteissa rauhallisella fokuksella.
-          </p>
-          <div class="hero-cta">
-            <a class="pill-btn" href="#about">Katso miksi NexaLife toimii</a>
-            <a class="pill-btn ghost" href="#support">Ota yhteys tukeen</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel reveal">
-        <p class="eyebrow">Esittely</p>
-        <h3 class="section-title">Yksi selkeä paikka arjen hyvinvointiin ja etenemiseen.</h3>
-        <p class="section-text">
-          NexaLife kokoaa suunnittelun, rutiinit, muistiinpanot ja yhteisön yhteen
-          rauhalliseen näkymään. Kun kaikki tärkeä on samassa paikassa, päätöksenteko
-          helpottuu ja päivän fokus pysyy olennaisessa.
-        </p>
-        <div class="panel-cta reveal">
-          <p>Aloita kevyesti, etene johdonmukaisesti.</p>
-          <a class="text-link" href="#support">Kysy lisää tai pyydä tukea</a>
-        </div>
-      </section>
-
-      <section id="about" class="panel reveal">
-        <p class="eyebrow">Tietoa</p>
-        <h3 class="section-title">
-          NexaLife yhdistää selkeyden, jatkuvuuden ja tasapainon yhdeksi toimivaksi kokonaisuudeksi.
-        </h3>
-        <p class="section-text">
-          NexaLife on tehty ihmisille, jotka haluavat voida paremmin ja saada
-          enemmän aikaan. Saat yhden selkeän paikan rutiineille, muistiinpanoille,
-          suunnittelulle ja tuelle - rauhalliseksi, nopeaksi ja päivittäin
-          toimivaksi rakennettuna.
-        </p>
-        <div class="about-grid">
-          <article class="text-card reveal">
-            <h4>Missä NexaLife auttaa</h4>
-            <ul>
-              <li>Päätä mitä tänään kannattaa tehdä ja suojaa fokuksesi.</li>
-              <li>Rakenna kestäviä tapoja, jotka sopivat oikeaan arkeen.</li>
-              <li>Pidä muistiinpanot ja suunnitelmat samassa luotettavassa paikassa.</li>
-              <li>Näe kehitys ajassa viikoittaisen nollauksen sijaan.</li>
-            </ul>
-          </article>
-          <article class="text-card reveal">
-            <h4>Kenelle sovellus sopii</h4>
-            <p>
-              NexaLife sopii opiskelijoille, tekijöille, yrittäjille ja kiireisille
-              ammattilaisille, jotka haluavat rauhallisemman tavan hallita arkea.
-              Jos nykyinen kokonaisuus tuntuu hajanaiselta, tämä antaa yhden
-              selkeän kotipesän.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="support" class="panel reveal">
-        <p class="eyebrow">Yhteys</p>
-        <h3 class="section-title">Tarvitsetko apua, yhteistyötä tai teknistä tukea?</h3>
-        <p class="section-text">
-          Valitse sopiva kanava alta. Vastaamme mahdollisimman nopeasti ja
-          ohjaamme sinut oikeaan seuraavaan vaiheeseen.
-        </p>
-        <div class="contact-grid">
-          <article class="contact-card reveal">
-            <h4>Yleinen yhteys</h4>
-            <p>Kysymykset, yhteistyö ja yritysyhteydenotot.</p>
-            <a href="mailto:info@nexalife.fi">info@nexalife.fi</a>
-          </article>
-          <article class="contact-card reveal">
-            <h4>Tekninen tuki</h4>
-            <p>Vikatilanteet, käyttöongelmat ja incident-ilmoitukset.</p>
-            <a href="mailto:support@nexalife.fi">support@nexalife.fi</a>
-          </article>
-          <article class="contact-card reveal">
-            <h4>Lakitiedot</h4>
-            <p>Tietosuoja ja käyttöehdot aina ajan tasalla.</p>
-            <div class="contact-links">
-              <a href="https://nexalife.fi/privacy_policy">tietosuojaseloste</a>
-              <a href="https://nexalife.fi/terms_of_service">käyttöehdot</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaLife - Hyvinvointiautomaatiota arkeen</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="navbar-landing">
+        <div class="container">
+            <div class="nav-left">
+                <a class="nav-brand" href="#home">
+                    <img src="./assets/images/nexanobg.png" alt="NexaLife" class="logo-image">
+                </a>
             </div>
-          </article>
+            <div class="nav-center">
+                <a href="#home" class="nav-link">Koti</a>
+                <a href="#story" class="nav-link">Tietoa</a>
+                <a href="#contact" class="nav-link">Yhteystiedot</a>
+            </div>
+            <div class="nav-right">
+                <div class="language-selector" id="languageSelector" data-lang="fi">
+                    <div class="language-select-custom" id="languageSelectCustom">
+                        <div class="language-select-selected">
+                            <img src="./assets/images/finland_flags_flag_9256.png" alt="Suomi" class="language-flag-icon">
+                            <span class="language-name">Suomi</span>
+                            <svg class="language-arrow" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                                <path fill="currentColor" d="M6 9L1 4h10z"/>
+                            </svg>
+                        </div>
+                        <div class="language-select-dropdown" id="languageSelectDropdown">
+                            <div class="language-option active" data-lang="fi" data-flag="./assets/images/finland_flags_flag_9256.png" data-name="Suomi" data-alt="Suomi">
+                                <img src="./assets/images/finland_flags_flag_9256.png" alt="Suomi" class="language-flag-icon">
+                                <span>Suomi</span>
+                            </div>
+                            <div class="language-option" data-lang="en" data-flag="./assets/images/EnglishLanguage_Flag1_26107.png" data-name="English" data-alt="English">
+                                <img src="./assets/images/EnglishLanguage_Flag1_26107.png" alt="English" class="language-flag-icon">
+                                <span>English</span>
+                            </div>
+                        </div>
+                    </div>
+                    <select id="languageSelect" class="language-select-hidden" aria-label="Kieli">
+                        <option value="fi">Suomi</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+                <a href="#contact" class="btn btn-outline">Ota yhteyttä</a>
+            </div>
         </div>
-      </section>
-    </main>
+    </nav>
+
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./assets/videos/taustavideo.mp4" type="video/mp4" />
+        </video>
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-label">Suomalainen luonto x moderni hyvinvointi</p>
+                <h1 class="hero-title">
+                    <span>NexaLife</span>
+                </h1>
+                <h2 class="hero-subtitle">Hyvinvointijärjestelmä päivittäiseen etenemiseen</h2>
+                <p class="hero-description">
+                    NexaLife on tehty sinulle, joka haluat lisää selkeyttä ilman turhaa
+                    kuormitusta. Suunnittele päivä, rakenna rutiineja ja etene
+                    tavoitteissa rauhallisella fokuksella.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#stores" class="btn btn-primary btn-large">Aloita nyt</a>
+                    <a href="#story" class="btn btn-outline btn-large">Lue lisää</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="we-are" class="we-are">
+        <div class="container">
+            <div class="we-are-content">
+                <h2 class="we-are-title">WE ARE NEXALIFE</h2>
+                <p class="we-are-text">
+                    Kehitämme hyvinvoinnin päiväjärjestelmää, joka auttaa tekemään oikeita
+                    asioita oikeaan aikaan. Jokainen ominaisuus on rakennettu ratkaisemaan
+                    oikeita arjen pullonkauloja.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="story" class="our-story">
+        <div class="container">
+            <h2 class="story-title">MISTÄ KAIKKI ALKOI</h2>
+            <div class="story-content">
+                <div class="story-text-wrapper">
+                    <p class="story-text">
+                        Arjen hallinta hajosi liian moneen appiin, listaan ja muistioon.
+                    </p>
+                    <p class="story-text">
+                        Kun suunnittelu, toteutus ja seuranta ovat eri paikoissa, fokus
+                        katoaa. NexaLife syntyi tarpeesta yhdistää kaikki olennainen yhteen
+                        rytmiin.
+                    </p>
+                    <p class="story-text story-text-final">
+                        NexaLife on työkalu, joka tekee etenemisestä selkeää ja rauhallista
+                        - päivä kerrallaan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions" class="curiosity">
+        <div class="container">
+            <h2 class="curiosity-title">PARHAAT RATKAISUT ALKAVAT KYSYMYKSISTÄ</h2>
+            <p class="curiosity-subtitle">
+                Rakensimme NexaLifen kolmen kysymyksen ympärille.
+            </p>
+            <div class="curiosity-examples">
+                <div class="curiosity-example">
+                    <div class="curiosity-label">KYSYMYS 1</div>
+                    <h3 class="curiosity-question">Miten löydän päivän tärkeimmät asiat ilman jatkuvaa säätöä?</h3>
+                    <p class="curiosity-answer">
+                        Kun päivän suunnittelu, tehtävät ja rutiinit ovat samassa näkymässä,
+                        päätöksenteko nopeutuu ja fokus pysyy olennaisessa.
+                    </p>
+                </div>
+                <div class="curiosity-example">
+                    <div class="curiosity-label">KYSYMYS 2</div>
+                    <h3 class="curiosity-question">Miten rakennan pysyviä tapoja, en vain hetkellistä motivaatiota?</h3>
+                    <p class="curiosity-answer">
+                        Pienet päivittäiset valinnat, realistinen rytmi ja näkyvä edistyminen
+                        tekevät tavoista pysyviä ilman ylikuormitusta.
+                    </p>
+                </div>
+                <div class="curiosity-example">
+                    <div class="curiosity-label">KYSYMYS 3</div>
+                    <h3 class="curiosity-question">Miten pidän hyvinvoinnin mukana myös kiireisinä viikkoina?</h3>
+                    <p class="curiosity-answer">
+                        Kun hyvinvoinnin seuranta on osa päivittäistä tekemistä, tasapaino säilyy
+                        paremmin myös silloin, kun arki kiristyy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2 class="cta-title">LATAA SOVELLUKSEMME</h2>
+            <p class="curiosity-subtitle">
+                Aloita NexaLife helposti puhelimellasi. Valitse oma laitteesi ja lataa sovellus.
+            </p>
+            <div id="stores" class="hero-buttons" style="justify-content: center; margin-bottom: 2rem;">
+                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-large store-btn">
+                    <span class="store-logo" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path fill="#00D26A" d="M3.2 2.4l9.3 9.3 3-3-9-5.2c-.8-.4-1.8-.1-2.3.9z"/>
+                            <path fill="#00B2FF" d="M3.2 2.4c-.1.2-.2.5-.2.8v17.6c0 .3.1.6.2.8l9.6-9.6-9.6-9.6z"/>
+                            <path fill="#FF375F" d="M3.2 21.6c.5.9 1.5 1.2 2.3.8l9-5.2-3-3-9.3 9.4z"/>
+                            <path fill="#FFD400" d="M20.6 10.8l-5.1-3-3.1 3.1 3.1 3.1 5.1-3c.6-.4.6-1.3 0-1.7z"/>
+                        </svg>
+                    </span>
+                    Google Play
+                </a>
+                <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-large store-btn">
+                    <span class="store-logo" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" focusable="false">
+                            <path d="M16.7 12.5c0-2.2 1.8-3.3 1.9-3.3-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.7.8-3.4.8-.7 0-1.8-.8-2.9-.8-1.5 0-2.9.9-3.7 2.2-1.6 2.8-.4 7 1.1 9.1.7 1 1.6 2.2 2.8 2.1 1.1 0 1.5-.7 2.9-.7 1.4 0 1.8.7 2.9.7 1.2 0 2-1.1 2.7-2.1.8-1.2 1.1-2.3 1.1-2.4 0 0-2.1-.8-2.1-3.9zM14.4 6c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.7-1 2.6 1 .1 2-.5 2.7-1.2z"/>
+                        </svg>
+                    </span>
+                    App Store
+                </a>
+            </div>
+            <h2 class="cta-title" style="font-size: clamp(1.6rem, 4vw, 2.4rem); margin-top: 1.2rem;">Tarvitsetko apua?</h2>
+            <div class="contact-info">
+                <p class="contact-text">
+                    Sähköposti:
+                    <a href="mailto:info@nexalife.fi" class="contact-link">info@nexalife.fi</a>
+                </p>
+                <p class="contact-text">
+                    Tuki:
+                    <a href="mailto:support@nexalife.fi" class="contact-link">support@nexalife.fi</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
-      <p>&copy; 2026 NexaLife</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="#home">
+                        <img src="./assets/images/nexanobg.png" alt="NexaLife" class="logo-image">
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Sivut</h4>
+                        <a href="#story">Tietoa</a>
+                        <a href="#contact">Yhteys</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Lakitiedot</h4>
+                        <a href="https://nexalife.fi/privacy_policy">Tietosuojaseloste</a>
+                        <a href="https://nexalife.fi/terms_of_service">Käyttöehdot</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kaikki oikeudet pidätetään.</p>
+                <p class="footer-company">NexaLife</p>
+            </div>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
-  </body>
+    <script src="./script.js"></script>
+</body>
 </html>
