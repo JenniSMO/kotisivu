@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexaLife Terms of Service</title>
+  <title>NexaLife Käyttöehdot</title>
   <meta
     name="description"
     content="Terms of Service for NexaLife application and related services."
@@ -14,115 +14,127 @@
   <nav class="navbar-landing">
     <div class="container">
       <div class="nav-left">
-        <a class="nav-brand" href="index.html#home">
+        <a class="nav-brand" href="./index.html#home">
           <img src="./assets/images/nexanobg.png" alt="NexaLife" class="logo-image" />
         </a>
       </div>
       <div class="nav-center">
-        <a href="index.html#home" class="nav-link">Koti</a>
-        <a href="index.html#story" class="nav-link">Tietoa</a>
-        <a href="index.html#contact" class="nav-link">Yhteystiedot</a>
+        <a href="./index.html#home" class="nav-link" data-i18n="nav.home">Koti</a>
+        <a href="./index.html#story" class="nav-link" data-i18n="nav.about">Tietoa</a>
+        <a href="./index.html#contact" class="nav-link" data-i18n="nav.contact">Yhteystiedot</a>
       </div>
       <div class="nav-right">
-        <a href="index.html#contact" class="btn btn-outline">Ota yhteyttä</a>
+        <div class="language-selector" id="languageSelector" data-lang="fi">
+          <div class="language-select-custom" id="languageSelectCustom">
+            <div class="language-select-selected">
+              <img src="./assets/images/finland_flags_flag_9256.png" alt="Suomi" class="language-flag-icon">
+              <span class="language-name">Suomi</span>
+              <svg class="language-arrow" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                <path fill="currentColor" d="M6 9L1 4h10z"/>
+              </svg>
+            </div>
+            <div class="language-select-dropdown" id="languageSelectDropdown">
+              <div class="language-option active" data-lang="fi" data-flag="./assets/images/finland_flags_flag_9256.png" data-name="Suomi" data-alt="Suomi">
+                <img src="./assets/images/finland_flags_flag_9256.png" alt="Suomi" class="language-flag-icon">
+                <span>Suomi</span>
+              </div>
+              <div class="language-option" data-lang="en" data-flag="./assets/images/EnglishLanguage_Flag1_26107.png" data-name="English" data-alt="English">
+                <img src="./assets/images/EnglishLanguage_Flag1_26107.png" alt="English" class="language-flag-icon">
+                <span>English</span>
+              </div>
+            </div>
+          </div>
+          <select id="languageSelect" class="language-select-hidden" aria-label="Kieli">
+            <option value="fi">Suomi</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <a href="./index.html#contact" class="btn btn-outline" data-i18n="nav.cta">Ota yhteyttä</a>
       </div>
     </div>
   </nav>
 
   <section class="our-story">
     <div class="container">
-      <h1 class="story-title">TERMS OF SERVICE</h1>
-      <p class="curiosity-subtitle" style="margin-bottom: 2.5rem;">Last updated: 2026-04-17</p>
+      <h1 class="story-title" data-i18n="legal.title">KÄYTTÖEHDOT</h1>
+      <p class="curiosity-subtitle" style="margin-bottom: 2.5rem;" data-i18n="legal.updated">Päivitetty: 2026-04-17</p>
       <div class="story-content">
         <article class="text-card">
-          <p>
-            These Terms of Service ("Terms") govern your use of the NexaLife app
-            and related services. By using NexaLife, you agree to these Terms.
-          </p>
-
-          <h2>1. Eligibility and account</h2>
-          <ul>
-            <li>
-              You are responsible for maintaining the confidentiality of your
-              account credentials.
-            </li>
-            <li>
-              You agree to provide accurate information and keep your account
-              details up to date.
-            </li>
-            <li>
-              You must complete required verification steps that may include
-              email and phone verification before full access is granted.
-            </li>
-          </ul>
-
-          <h2>2. Acceptable use</h2>
-          <ul>
-            <li>You must use NexaLife in compliance with applicable laws.</li>
-            <li>
-              You must not misuse, disrupt, reverse engineer, or attempt
-              unauthorized access to the service.
-            </li>
-            <li>
-              You are responsible for content and data you submit through the app.
-            </li>
-            <li>
-              You must not post unlawful, harmful, abusive, infringing, or
-              fraudulent content, or otherwise use the service to evade
-              moderation or security controls.
-            </li>
-          </ul>
-
-          <h2>3. Service availability</h2>
-          <p>
-            We may update, modify, or discontinue parts of the service at any
-            time. We do not guarantee uninterrupted availability, specific
-            feature continuity, or uninterrupted access to third-party
-            integrations used by the app.
-          </p>
-
-          <h2>4. Intellectual property</h2>
-          <p>
-            NexaLife, including branding, software, and content, is owned by or
-            licensed to us and protected by applicable intellectual property laws.
-          </p>
-
-          <h2>5. Disclaimer</h2>
-          <p>
-            NexaLife provides general wellbeing support and informational content.
-            It is not medical advice and does not replace professional healthcare.
-          </p>
-
-          <h2>6. Limitation of liability</h2>
-          <p>
-            To the fullest extent permitted by law, we are not liable for indirect
-            or consequential damages resulting from your use of the service.
-          </p>
-
-          <h2>7. Moderation and enforcement</h2>
-          <p>
-            To protect users and service integrity, we may investigate abuse,
-            apply warnings, limit visibility of content, or restrict and ban
-            accounts, devices, emails, or phone numbers in line with applicable
-            law and our moderation policies.
-          </p>
-
-          <h2>8. Termination</h2>
-          <p>
-            We may suspend or terminate access if these Terms are violated or if
-            required by law.
-          </p>
-
-          <h2>9. Changes to terms</h2>
-          <p>
-            We may update these Terms. Continued use of the service after updates
-            means you accept the revised Terms.
-          </p>
-
-          <h2>10. Contact</h2>
-          <div class="contact-links">
-            <a href="mailto:info@nexalife.fi">info@nexalife.fi</a>
-            <a href="mailto:support@nexalife.fi">support@nexalife.fi</a>
+          <div data-legal-lang="fi">
+            <p>
+              Nämä käyttöehdot ("ehdot") säätelevät NexaLife-sovelluksen ja siihen
+              liittyvien palveluiden käyttöä. Käyttämällä NexaLifea hyväksyt nämä ehdot.
+            </p>
+            <h2>1. Kelpoisuus ja käyttäjätili</h2>
+            <ul>
+              <li>Vastaat käyttäjätilisi tunnistetietojen luottamuksellisuudesta.</li>
+              <li>Sitoudut antamaan oikeat tiedot ja pitämään tilitietosi ajan tasalla.</li>
+              <li>Sinun on suoritettava vaaditut vahvistukset (kuten sähköposti- ja puhelinvahvistus), ennen kuin täysi käyttöoikeus myönnetään.</li>
+            </ul>
+            <h2>2. Hyväksyttävä käyttö</h2>
+            <ul>
+              <li>Sinun tulee käyttää NexaLifea sovellettavien lakien mukaisesti.</li>
+              <li>Et saa väärinkäyttää, häiritä, takaisinmallintaa tai yrittää luvatonta pääsyä palveluun.</li>
+              <li>Vastaat sovelluksen kautta lähettämästäsi sisällöstä ja datasta.</li>
+              <li>Et saa julkaista laitonta, haitallista, loukkaavaa, oikeuksia rikkovaa tai vilpillistä sisältöä etkä kiertää moderointi- tai turvakontrolleja.</li>
+            </ul>
+            <h2>3. Palvelun saatavuus</h2>
+            <p>Voimme päivittää, muokata tai lopettaa palvelun osia milloin tahansa. Emme takaa katkottomuutta, tiettyjen ominaisuuksien pysyvyyttä tai kolmansien osapuolten integraatioiden jatkuvaa saatavuutta.</p>
+            <h2>4. Immateriaalioikeudet</h2>
+            <p>NexaLifeen liittyvä brändi, ohjelmisto ja sisältö ovat meidän omistuksessa tai lisensoitu meille, ja niitä suojaavat sovellettavat immateriaalioikeuslait.</p>
+            <h2>5. Vastuuvapauslauseke</h2>
+            <p>NexaLife tarjoaa yleistä hyvinvointia tukevaa ja informatiivista sisältöä. Se ei ole lääketieteellinen neuvonta eikä korvaa terveydenhuollon ammattilaisia.</p>
+            <h2>6. Vastuunrajoitus</h2>
+            <p>Lain sallimissa rajoissa emme vastaa välillisistä tai epäsuorista vahingoista, jotka johtuvat palvelun käytöstä.</p>
+            <h2>7. Moderointi ja valvonta</h2>
+            <p>Käyttäjien ja palvelun eheyden suojaamiseksi voimme tutkia väärinkäytöksiä, antaa varoituksia, rajoittaa sisällön näkyvyyttä sekä rajoittaa tai estää tilejä, laitteita, sähköposteja tai puhelinnumeroita sovellettavan lain ja moderointikäytäntöjen mukaisesti.</p>
+            <h2>8. Päättäminen</h2>
+            <p>Voimme keskeyttää tai lopettaa käyttöoikeuden, jos ehtoja rikotaan tai laki sitä edellyttää.</p>
+            <h2>9. Ehtojen muutokset</h2>
+            <p>Voimme päivittää näitä ehtoja. Palvelun käytön jatkaminen muutosten jälkeen tarkoittaa, että hyväksyt päivitetyt ehdot.</p>
+            <h2>10. Yhteystiedot</h2>
+            <div class="contact-links">
+              <a href="mailto:info@nexalife.fi" class="contact-link">info@nexalife.fi</a>
+              <a href="mailto:support@nexalife.fi" class="contact-link">support@nexalife.fi</a>
+            </div>
+          </div>
+          <div data-legal-lang="en" hidden>
+            <p>
+              These Terms of Service ("Terms") govern your use of the NexaLife app
+              and related services. By using NexaLife, you agree to these Terms.
+            </p>
+            <h2>1. Eligibility and account</h2>
+            <ul>
+              <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+              <li>You agree to provide accurate information and keep your account details up to date.</li>
+              <li>You must complete required verification steps that may include email and phone verification before full access is granted.</li>
+            </ul>
+            <h2>2. Acceptable use</h2>
+            <ul>
+              <li>You must use NexaLife in compliance with applicable laws.</li>
+              <li>You must not misuse, disrupt, reverse engineer, or attempt unauthorized access to the service.</li>
+              <li>You are responsible for content and data you submit through the app.</li>
+              <li>You must not post unlawful, harmful, abusive, infringing, or fraudulent content, or otherwise use the service to evade moderation or security controls.</li>
+            </ul>
+            <h2>3. Service availability</h2>
+            <p>We may update, modify, or discontinue parts of the service at any time. We do not guarantee uninterrupted availability, specific feature continuity, or uninterrupted access to third-party integrations used by the app.</p>
+            <h2>4. Intellectual property</h2>
+            <p>NexaLife, including branding, software, and content, is owned by or licensed to us and protected by applicable intellectual property laws.</p>
+            <h2>5. Disclaimer</h2>
+            <p>NexaLife provides general wellbeing support and informational content. It is not medical advice and does not replace professional healthcare.</p>
+            <h2>6. Limitation of liability</h2>
+            <p>To the fullest extent permitted by law, we are not liable for indirect or consequential damages resulting from your use of the service.</p>
+            <h2>7. Moderation and enforcement</h2>
+            <p>To protect users and service integrity, we may investigate abuse, apply warnings, limit visibility of content, or restrict and ban accounts, devices, emails, or phone numbers in line with applicable law and our moderation policies.</p>
+            <h2>8. Termination</h2>
+            <p>We may suspend or terminate access if these Terms are violated or if required by law.</p>
+            <h2>9. Changes to terms</h2>
+            <p>We may update these Terms. Continued use of the service after updates means you accept the revised Terms.</p>
+            <h2>10. Contact</h2>
+            <div class="contact-links">
+              <a href="mailto:info@nexalife.fi" class="contact-link">info@nexalife.fi</a>
+              <a href="mailto:support@nexalife.fi" class="contact-link">support@nexalife.fi</a>
+            </div>
           </div>
         </article>
       </div>
@@ -133,28 +145,154 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a class="nav-brand" href="index.html#home">
+          <a class="nav-brand" href="./index.html#home">
             <img src="./assets/images/nexanobg.png" alt="NexaLife" class="logo-image" />
           </a>
         </div>
         <div class="footer-links">
           <div class="footer-column">
-            <h4>Sivut</h4>
-            <a href="index.html#story">Tietoa</a>
-            <a href="index.html#contact">Yhteys</a>
+            <h4 data-i18n="footer.pages">Sivut</h4>
+            <a href="./index.html#story" data-i18n="footer.about">Tietoa</a>
+            <a href="./index.html#contact" data-i18n="footer.contact">Yhteys</a>
           </div>
           <div class="footer-column">
-            <h4>Lakitiedot</h4>
-            <a href="https://nexalife.fi/privacy_policy">Tietosuojaseloste</a>
-            <a href="https://nexalife.fi/terms_of_service">Käyttöehdot</a>
+            <h4 data-i18n="footer.legal">Lakitiedot</h4>
+            <a href="https://nexalife.fi/privacy_policy" data-i18n="footer.privacy">Tietosuojaseloste</a>
+            <a href="https://nexalife.fi/terms_of_service" data-i18n="footer.terms">Käyttöehdot</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Kaikki oikeudet pidätetään.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Kaikki oikeudet pidätetään.</p>
         <p class="footer-company">NexaLife</p>
       </div>
     </div>
   </footer>
+  <script>
+    const languageSelector = document.getElementById("languageSelector");
+    const languageSelectCustom = document.getElementById("languageSelectCustom");
+    const languageSelectDropdown = document.getElementById("languageSelectDropdown");
+    const languageSelect = document.getElementById("languageSelect");
+
+    if (languageSelector && languageSelectCustom && languageSelectDropdown && languageSelect) {
+      const translations = {
+        fi: {
+          "nav.home": "Koti",
+          "nav.about": "Tietoa",
+          "nav.contact": "Yhteystiedot",
+          "nav.cta": "Ota yhteyttä",
+          "legal.title": "KÄYTTÖEHDOT",
+          "legal.updated": "Päivitetty: 2026-04-17",
+          "legal.section1": "1. Kelpoisuus ja käyttäjätili",
+          "legal.section2": "2. Hyväksyttävä käyttö",
+          "legal.section3": "3. Palvelun saatavuus",
+          "legal.section4": "4. Immateriaalioikeudet",
+          "legal.section5": "5. Vastuuvapauslauseke",
+          "legal.section6": "6. Vastuunrajoitus",
+          "legal.section7": "7. Moderointi ja valvonta",
+          "legal.section8": "8. Päättäminen",
+          "legal.section9": "9. Ehtojen muutokset",
+          "legal.section10": "10. Yhteystiedot",
+          "footer.pages": "Sivut",
+          "footer.about": "Tietoa",
+          "footer.contact": "Yhteys",
+          "footer.legal": "Lakitiedot",
+          "footer.privacy": "Tietosuojaseloste",
+          "footer.terms": "Käyttöehdot",
+          "footer.copyright": "© 2026 Kaikki oikeudet pidätetään."
+        },
+        en: {
+          "nav.home": "Home",
+          "nav.about": "About",
+          "nav.contact": "Contact",
+          "nav.cta": "Contact us",
+          "legal.title": "TERMS OF SERVICE",
+          "legal.updated": "Last updated: 2026-04-17",
+          "legal.section1": "1. Eligibility and account",
+          "legal.section2": "2. Acceptable use",
+          "legal.section3": "3. Service availability",
+          "legal.section4": "4. Intellectual property",
+          "legal.section5": "5. Disclaimer",
+          "legal.section6": "6. Limitation of liability",
+          "legal.section7": "7. Moderation and enforcement",
+          "legal.section8": "8. Termination",
+          "legal.section9": "9. Changes to terms",
+          "legal.section10": "10. Contact",
+          "footer.pages": "Pages",
+          "footer.about": "About",
+          "footer.contact": "Contact",
+          "footer.legal": "Legal",
+          "footer.privacy": "Privacy Policy",
+          "footer.terms": "Terms of Service",
+          "footer.copyright": "© 2026 All rights reserved."
+        }
+      };
+
+      const selectedRoot = languageSelectCustom.querySelector(".language-select-selected");
+      const selectedFlag = selectedRoot?.querySelector(".language-flag-icon");
+      const selectedName = selectedRoot?.querySelector(".language-name");
+      const options = languageSelectDropdown.querySelectorAll(".language-option");
+      const i18nElements = document.querySelectorAll("[data-i18n]");
+      const legalLangBlocks = document.querySelectorAll("[data-legal-lang]");
+
+      const applyLanguage = (lang) => {
+        const chosen = translations[lang] ? lang : "fi";
+        const dict = translations[chosen];
+        document.documentElement.lang = chosen;
+        localStorage.setItem("nexalife_lang", chosen);
+        document.title = chosen === "fi" ? "NexaLife Käyttöehdot" : "NexaLife Terms of Service";
+
+        i18nElements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (!key || !dict[key]) return;
+          el.textContent = dict[key];
+        });
+        legalLangBlocks.forEach((block) => {
+          block.hidden = block.getAttribute("data-legal-lang") !== chosen;
+        });
+
+        const option = Array.from(options).find((opt) => opt.getAttribute("data-lang") === chosen);
+        if (!option) return;
+        const flag = option.getAttribute("data-flag") || "./assets/images/finland_flags_flag_9256.png";
+        const flagAlt = option.getAttribute("data-alt") || "Suomi";
+        const name = option.getAttribute("data-name") || "Suomi";
+
+        languageSelector.setAttribute("data-lang", chosen);
+        languageSelect.value = chosen;
+        if (selectedFlag && selectedFlag.tagName === "IMG") {
+          selectedFlag.setAttribute("src", flag);
+          selectedFlag.setAttribute("alt", flagAlt);
+        }
+        if (selectedName) selectedName.textContent = name;
+        options.forEach((opt) => opt.classList.remove("active"));
+        option.classList.add("active");
+      };
+
+      selectedRoot?.addEventListener("click", () => {
+        languageSelectCustom.classList.toggle("active");
+      });
+
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          applyLanguage(option.getAttribute("data-lang") || "fi");
+          languageSelectCustom.classList.remove("active");
+        });
+      });
+
+      languageSelect.addEventListener("change", (event) => {
+        applyLanguage(event.target.value);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!languageSelectCustom.contains(event.target)) {
+          languageSelectCustom.classList.remove("active");
+        }
+      });
+
+      const browserLang = (navigator.language || "fi").toLowerCase().startsWith("fi") ? "fi" : "en";
+      const savedLang = localStorage.getItem("nexalife_lang");
+      applyLanguage(savedLang || browserLang);
+    }
+  </script>
 </body>
 </html>

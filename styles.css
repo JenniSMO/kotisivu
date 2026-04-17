@@ -46,6 +46,21 @@ body {
 .nav-link:hover, .nav-link.is-active { color: #fff; }
 .nav-link:hover::after, .nav-link.is-active::after { width: 100%; }
 
+/* Keep legal-page header height identical to landing page */
+.legal-page .navbar-landing {
+  padding: 1.25rem 0;
+}
+
+.legal-page .navbar-landing .container {
+  min-height: 2.5rem;
+  align-items: center;
+}
+
+.legal-page .nav-center,
+.legal-page .nav-right {
+  align-items: center;
+}
+
 .btn {
   padding: .75rem 1.5rem;
   border-radius: 4px;

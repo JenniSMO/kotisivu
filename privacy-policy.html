@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexaLife Privacy Policy</title>
+  <title>NexaLife Tietosuojaseloste</title>
   <meta
     name="description"
     content="Privacy Policy for NexaLife application and related services."
@@ -14,139 +14,139 @@
   <nav class="navbar-landing">
     <div class="container">
       <div class="nav-left">
-        <a class="nav-brand" href="index.html#home">
+        <a class="nav-brand" href="./index.html#home">
           <img src="./assets/images/nexanobg.png" alt="NexaLife" class="logo-image" />
         </a>
       </div>
       <div class="nav-center">
-        <a href="index.html#home" class="nav-link">Koti</a>
-        <a href="index.html#story" class="nav-link">Tietoa</a>
-        <a href="index.html#contact" class="nav-link">Yhteystiedot</a>
+        <a href="./index.html#home" class="nav-link" data-i18n="nav.home">Koti</a>
+        <a href="./index.html#story" class="nav-link" data-i18n="nav.about">Tietoa</a>
+        <a href="./index.html#contact" class="nav-link" data-i18n="nav.contact">Yhteystiedot</a>
       </div>
       <div class="nav-right">
-        <a href="index.html#contact" class="btn btn-outline">Ota yhteyttä</a>
+        <div class="language-selector" id="languageSelector" data-lang="fi">
+          <div class="language-select-custom" id="languageSelectCustom">
+            <div class="language-select-selected">
+              <img src="./assets/images/finland_flags_flag_9256.png" alt="Suomi" class="language-flag-icon">
+              <span class="language-name">Suomi</span>
+              <svg class="language-arrow" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                <path fill="currentColor" d="M6 9L1 4h10z"/>
+              </svg>
+            </div>
+            <div class="language-select-dropdown" id="languageSelectDropdown">
+              <div class="language-option active" data-lang="fi" data-flag="./assets/images/finland_flags_flag_9256.png" data-name="Suomi" data-alt="Suomi">
+                <img src="./assets/images/finland_flags_flag_9256.png" alt="Suomi" class="language-flag-icon">
+                <span>Suomi</span>
+              </div>
+              <div class="language-option" data-lang="en" data-flag="./assets/images/EnglishLanguage_Flag1_26107.png" data-name="English" data-alt="English">
+                <img src="./assets/images/EnglishLanguage_Flag1_26107.png" alt="English" class="language-flag-icon">
+                <span>English</span>
+              </div>
+            </div>
+          </div>
+          <select id="languageSelect" class="language-select-hidden" aria-label="Kieli">
+            <option value="fi">Suomi</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <a href="./index.html#contact" class="btn btn-outline" data-i18n="nav.cta">Ota yhteyttä</a>
       </div>
     </div>
   </nav>
 
   <section class="our-story">
     <div class="container">
-      <h1 class="story-title">PRIVACY POLICY</h1>
-      <p class="curiosity-subtitle" style="margin-bottom: 2.5rem;">Last updated: 2026-04-17</p>
+      <h1 class="story-title" data-i18n="legal.title">TIETOSUOJASELOSTE</h1>
+      <p class="curiosity-subtitle" style="margin-bottom: 2.5rem;" data-i18n="legal.updated">Päivitetty: 2026-04-17</p>
       <div class="story-content">
         <article class="text-card">
-          <p>
-            This Privacy Policy explains how NexaLife ("we", "us", "our")
-            collects, uses, and protects personal data when you use the NexaLife
-            mobile application and related services.
-          </p>
-
-          <h2>1. Data we collect</h2>
-          <ul>
-            <li>
-              Account and identity data (for example email address, user ID,
-              and authentication provider details).
-            </li>
-            <li>
-              Profile and community data you create (for example display name,
-              profile bio, avatar, published content, likes, saves, reports,
-              and moderation status).
-            </li>
-            <li>
-              Phone verification data (for example verified phone number in
-              E.164 format and verification timestamps).
-            </li>
-            <li>
-              Technical and security data (for example app version, device and
-              platform signals, app check signals, hashed device identifiers,
-              and operational logs).
-            </li>
-            <li>
-              Local on-device data used by app features (for example notes,
-              tasks, planner state, foods, workouts, and settings stored in
-              local app storage).
-            </li>
-          </ul>
-
-          <h2>2. How we use data</h2>
-          <ul>
-            <li>To create, secure, and manage user accounts.</li>
-            <li>
-              To provide core app features, including community features and
-              synchronization of profile-related data.
-            </li>
-            <li>
-              To perform security and abuse prevention actions, including fraud
-              and moderation checks, device-linking for enforcement, and ban
-              management.
-            </li>
-            <li>
-              To improve service quality and stability through analytics and
-              operational monitoring.
-            </li>
-            <li>To communicate important service and safety notices.</li>
-          </ul>
-
-          <h2>3. Legal basis</h2>
-          <p>
-            We process personal data based on contract performance, legitimate
-            interests, and where required by law, user consent.
-          </p>
-
-          <h2>4. Data sharing</h2>
-          <p>
-            We do not sell personal data. We use service providers as data
-            processors where needed to operate the service, such as Firebase
-            services (authentication, database, storage, app check, and
-            analytics). Some user actions may query third-party public
-            databases (for example barcode lookups in Open Food Facts). We only
-            share data as required to deliver features, maintain security, or
-            comply with legal obligations.
-          </p>
-
-          <h2>5. Data retention</h2>
-          <p>
-            We retain personal data for as long as needed for the purposes
-            described in this policy and to meet legal obligations. Retention
-            periods can vary by data type (for example account and profile
-            records, moderation records, and local on-device state). In some
-            enforcement situations, selected community data may be removed or
-            minimized according to our moderation rules.
-          </p>
-
-          <h2>6. Your rights</h2>
-          <p>
-            Depending on your location and applicable law, you may have rights
-            to access, correct, delete, or restrict processing of your personal
-            data. You may also have the right to data portability and to
-            withdraw consent where processing is based on consent. You can send
-            privacy requests using the contact details below.
-          </p>
-
-          <h2>7. Security</h2>
-          <p>
-            We use reasonable administrative, technical, and organizational
-            safeguards to protect personal data. No method of storage or transfer
-            is fully secure.
-          </p>
-
-          <h2>8. Children</h2>
-          <p>
-            NexaLife is not intended for children under the minimum age permitted
-            by applicable law in your country.
-          </p>
-
-          <h2>9. Contact</h2>
-          <p>
-            For privacy requests (access, correction, deletion, or other data
-            rights), contact:
-          </p>
-          <div class="contact-links">
-            <a href="mailto:info@nexalife.fi">info@nexalife.fi</a>
+          <div data-legal-lang="fi">
+            <p>
+              Tämä tietosuojaseloste kertoo, miten NexaLife ("me", "meidän")
+              kerää, käyttää ja suojaa henkilötietoja, kun käytät NexaLife-mobiilisovellusta
+              ja siihen liittyviä palveluita.
+            </p>
+            <h2>1. Kerättävät tiedot</h2>
+            <ul>
+              <li>Tilin ja tunnistamisen tiedot (esim. sähköposti, käyttäjätunnus ja kirjautumispalvelun tiedot).</li>
+              <li>Profiili- ja yhteisötiedot, joita tuotat (esim. näyttönimi, profiiliteksti, avatar, julkaisut, tykkäykset, tallennukset, raportit ja moderointitila).</li>
+              <li>Puhelinvarmennuksen tiedot (esim. varmennettu puhelinnumero E.164-muodossa ja varmennuksen aikaleimat).</li>
+              <li>Tekniset ja tietoturvatiedot (esim. sovellusversio, laite- ja alustasignaalit, App Check -signaalit, hajautetut laitetunnisteet ja operatiiviset lokit).</li>
+              <li>Laitteelle tallennettava paikallinen data sovelluksen toimintoja varten (esim. muistiinpanot, tehtävät, suunnittelun tila, ruokapäiväkirja, harjoitukset ja asetukset).</li>
+            </ul>
+            <h2>2. Miten käytämme tietoja</h2>
+            <ul>
+              <li>Käyttäjätilien luomiseen, suojaamiseen ja hallintaan.</li>
+              <li>Sovelluksen ydintoimintojen tarjoamiseen, mukaan lukien yhteisötoiminnot ja profiilitietojen synkronointi.</li>
+              <li>Tietoturvan ja väärinkäytösten estämiseen, mukaan lukien petosten torjunta, moderointi, laitetason valvonta ja estojen hallinta.</li>
+              <li>Palvelun laadun ja vakauden parantamiseen analytiikan ja operatiivisen seurannan avulla.</li>
+              <li>Tärkeiden palvelu- ja turvallisuusilmoitusten viestimiseen.</li>
+            </ul>
+            <h2>3. Käsittelyn oikeusperuste</h2>
+            <p>Käsittelemme henkilötietoja sopimuksen täytäntöönpanon, oikeutetun edun sekä lain edellyttämissä tilanteissa suostumuksen perusteella.</p>
+            <h2>4. Tietojen jakaminen</h2>
+            <p>Emme myy henkilötietoja. Käytämme tarvittaessa palveluntarjoajia henkilötietojen käsittelijöinä (esim. Firebase-palvelut: tunnistautuminen, tietokanta, tallennus, App Check ja analytiikka). Osa toiminnoista voi tehdä kyselyitä kolmansien osapuolten julkisiin tietokantoihin (esim. viivakoodihaku Open Food Facts -palvelusta). Tietoja jaetaan vain palvelun toteuttamiseksi, turvallisuuden varmistamiseksi tai lakisääteisten velvoitteiden noudattamiseksi.</p>
+            <h2>5. Tietojen säilytys</h2>
+            <p>Säilytämme henkilötietoja niin kauan kuin on tarpeen tässä selosteessa kuvattuihin tarkoituksiin ja lakisääteisten velvoitteiden täyttämiseksi. Säilytysajat vaihtelevat tietotyypeittäin. Joissain valvontatilanteissa yhteisösisältöä voidaan poistaa tai minimoida moderointikäytäntöjemme mukaisesti.</p>
+            <h2>6. Oikeutesi</h2>
+            <p>Sijainnistasi ja sovellettavasta laista riippuen sinulla voi olla oikeus tarkastaa, oikaista, poistaa tai rajoittaa henkilötietojesi käsittelyä. Sinulla voi myös olla oikeus siirtää tiedot järjestelmästä toiseen sekä peruuttaa suostumus silloin, kun käsittely perustuu suostumukseen. Voit lähettää tietosuojapyynnön alla oleviin yhteystietoihin.</p>
+            <h2>7. Tietoturva</h2>
+            <p>Käytämme kohtuullisia hallinnollisia, teknisiä ja organisatorisia suojatoimia henkilötietojen suojaamiseksi. Mikään tiedon säilytys- tai siirtotapa ei kuitenkaan ole täysin turvallinen.</p>
+            <h2>8. Lapset</h2>
+            <p>NexaLife ei ole tarkoitettu lapsille, jotka ovat alle maasi lain salliman vähimmäisiän.</p>
+            <h2>9. Yhteystiedot</h2>
+            <p>Tietosuojapyyntöihin (tarkastus, oikaisu, poisto tai muut tietosuojaoikeudet) ota yhteyttä:</p>
+            <div class="contact-links">
+              <a href="mailto:info@nexalife.fi" class="contact-link">info@nexalife.fi</a>
+            </div>
+            <p>Tietoturvaan ja häiriötilanteisiin liittyvissä asioissa ota yhteyttä:</p>
+            <div class="contact-links">
+              <a href="mailto:support@nexalife.fi" class="contact-link">support@nexalife.fi</a>
+            </div>
           </div>
-          <p>For incident and security situations, contact:</p>
-          <div class="contact-links">
-            <a href="mailto:support@nexalife.fi">support@nexalife.fi</a>
+          <div data-legal-lang="en" hidden>
+            <p>
+              This Privacy Policy explains how NexaLife ("we", "us", "our")
+              collects, uses, and protects personal data when you use the NexaLife
+              mobile application and related services.
+            </p>
+            <h2>1. Data we collect</h2>
+            <ul>
+              <li>Account and identity data (for example email address, user ID, and authentication provider details).</li>
+              <li>Profile and community data you create (for example display name, profile bio, avatar, published content, likes, saves, reports, and moderation status).</li>
+              <li>Phone verification data (for example verified phone number in E.164 format and verification timestamps).</li>
+              <li>Technical and security data (for example app version, device and platform signals, app check signals, hashed device identifiers, and operational logs).</li>
+              <li>Local on-device data used by app features (for example notes, tasks, planner state, foods, workouts, and settings stored in local app storage).</li>
+            </ul>
+            <h2>2. How we use data</h2>
+            <ul>
+              <li>To create, secure, and manage user accounts.</li>
+              <li>To provide core app features, including community features and synchronization of profile-related data.</li>
+              <li>To perform security and abuse prevention actions, including fraud and moderation checks, device-linking for enforcement, and ban management.</li>
+              <li>To improve service quality and stability through analytics and operational monitoring.</li>
+              <li>To communicate important service and safety notices.</li>
+            </ul>
+            <h2>3. Legal basis</h2>
+            <p>We process personal data based on contract performance, legitimate interests, and where required by law, user consent.</p>
+            <h2>4. Data sharing</h2>
+            <p>We do not sell personal data. We use service providers as data processors where needed to operate the service, such as Firebase services (authentication, database, storage, app check, and analytics). Some user actions may query third-party public databases (for example barcode lookups in Open Food Facts). We only share data as required to deliver features, maintain security, or comply with legal obligations.</p>
+            <h2>5. Data retention</h2>
+            <p>We retain personal data for as long as needed for the purposes described in this policy and to meet legal obligations. Retention periods can vary by data type. In some enforcement situations, selected community data may be removed or minimized according to our moderation rules.</p>
+            <h2>6. Your rights</h2>
+            <p>Depending on your location and applicable law, you may have rights to access, correct, delete, or restrict processing of your personal data. You may also have the right to data portability and to withdraw consent where processing is based on consent. You can send privacy requests using the contact details below.</p>
+            <h2>7. Security</h2>
+            <p>We use reasonable administrative, technical, and organizational safeguards to protect personal data. No method of storage or transfer is fully secure.</p>
+            <h2>8. Children</h2>
+            <p>NexaLife is not intended for children under the minimum age permitted by applicable law in your country.</p>
+            <h2>9. Contact</h2>
+            <p>For privacy requests (access, correction, deletion, or other data rights), contact:</p>
+            <div class="contact-links">
+              <a href="mailto:info@nexalife.fi" class="contact-link">info@nexalife.fi</a>
+            </div>
+            <p>For incident and security situations, contact:</p>
+            <div class="contact-links">
+              <a href="mailto:support@nexalife.fi" class="contact-link">support@nexalife.fi</a>
+            </div>
           </div>
         </article>
       </div>
@@ -157,28 +157,152 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <a class="nav-brand" href="index.html#home">
+          <a class="nav-brand" href="./index.html#home">
             <img src="./assets/images/nexanobg.png" alt="NexaLife" class="logo-image" />
           </a>
         </div>
         <div class="footer-links">
           <div class="footer-column">
-            <h4>Sivut</h4>
-            <a href="index.html#story">Tietoa</a>
-            <a href="index.html#contact">Yhteys</a>
+            <h4 data-i18n="footer.pages">Sivut</h4>
+            <a href="./index.html#story" data-i18n="footer.about">Tietoa</a>
+            <a href="./index.html#contact" data-i18n="footer.contact">Yhteys</a>
           </div>
           <div class="footer-column">
-            <h4>Lakitiedot</h4>
-            <a href="https://nexalife.fi/privacy_policy">Tietosuojaseloste</a>
-            <a href="https://nexalife.fi/terms_of_service">Käyttöehdot</a>
+            <h4 data-i18n="footer.legal">Lakitiedot</h4>
+            <a href="https://nexalife.fi/privacy_policy" data-i18n="footer.privacy">Tietosuojaseloste</a>
+            <a href="https://nexalife.fi/terms_of_service" data-i18n="footer.terms">Käyttöehdot</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Kaikki oikeudet pidätetään.</p>
+        <p data-i18n="footer.copyright">&copy; 2026 Kaikki oikeudet pidätetään.</p>
         <p class="footer-company">NexaLife</p>
       </div>
     </div>
   </footer>
+  <script>
+    const languageSelector = document.getElementById("languageSelector");
+    const languageSelectCustom = document.getElementById("languageSelectCustom");
+    const languageSelectDropdown = document.getElementById("languageSelectDropdown");
+    const languageSelect = document.getElementById("languageSelect");
+
+    if (languageSelector && languageSelectCustom && languageSelectDropdown && languageSelect) {
+      const translations = {
+        fi: {
+          "nav.home": "Koti",
+          "nav.about": "Tietoa",
+          "nav.contact": "Yhteystiedot",
+          "nav.cta": "Ota yhteyttä",
+          "legal.title": "TIETOSUOJASELOSTE",
+          "legal.updated": "Päivitetty: 2026-04-17",
+          "legal.section1": "1. Kerättävät tiedot",
+          "legal.section2": "2. Miten käytämme tietoja",
+          "legal.section3": "3. Käsittelyn oikeusperuste",
+          "legal.section4": "4. Tietojen jakaminen",
+          "legal.section5": "5. Tietojen säilytys",
+          "legal.section6": "6. Oikeutesi",
+          "legal.section7": "7. Tietoturva",
+          "legal.section8": "8. Lapset",
+          "legal.section9": "9. Yhteystiedot",
+          "footer.pages": "Sivut",
+          "footer.about": "Tietoa",
+          "footer.contact": "Yhteys",
+          "footer.legal": "Lakitiedot",
+          "footer.privacy": "Tietosuojaseloste",
+          "footer.terms": "Käyttöehdot",
+          "footer.copyright": "© 2026 Kaikki oikeudet pidätetään."
+        },
+        en: {
+          "nav.home": "Home",
+          "nav.about": "About",
+          "nav.contact": "Contact",
+          "nav.cta": "Contact us",
+          "legal.title": "PRIVACY POLICY",
+          "legal.updated": "Last updated: 2026-04-17",
+          "legal.section1": "1. Data we collect",
+          "legal.section2": "2. How we use data",
+          "legal.section3": "3. Legal basis",
+          "legal.section4": "4. Data sharing",
+          "legal.section5": "5. Data retention",
+          "legal.section6": "6. Your rights",
+          "legal.section7": "7. Security",
+          "legal.section8": "8. Children",
+          "legal.section9": "9. Contact",
+          "footer.pages": "Pages",
+          "footer.about": "About",
+          "footer.contact": "Contact",
+          "footer.legal": "Legal",
+          "footer.privacy": "Privacy Policy",
+          "footer.terms": "Terms of Service",
+          "footer.copyright": "© 2026 All rights reserved."
+        }
+      };
+
+      const selectedRoot = languageSelectCustom.querySelector(".language-select-selected");
+      const selectedFlag = selectedRoot?.querySelector(".language-flag-icon");
+      const selectedName = selectedRoot?.querySelector(".language-name");
+      const options = languageSelectDropdown.querySelectorAll(".language-option");
+      const i18nElements = document.querySelectorAll("[data-i18n]");
+      const legalLangBlocks = document.querySelectorAll("[data-legal-lang]");
+
+      const applyLanguage = (lang) => {
+        const chosen = translations[lang] ? lang : "fi";
+        const dict = translations[chosen];
+        document.documentElement.lang = chosen;
+        localStorage.setItem("nexalife_lang", chosen);
+        document.title = chosen === "fi" ? "NexaLife Tietosuojaseloste" : "NexaLife Privacy Policy";
+
+        i18nElements.forEach((el) => {
+          const key = el.getAttribute("data-i18n");
+          if (!key || !dict[key]) return;
+          el.textContent = dict[key];
+        });
+        legalLangBlocks.forEach((block) => {
+          block.hidden = block.getAttribute("data-legal-lang") !== chosen;
+        });
+
+        const option = Array.from(options).find((opt) => opt.getAttribute("data-lang") === chosen);
+        if (!option) return;
+        const flag = option.getAttribute("data-flag") || "./assets/images/finland_flags_flag_9256.png";
+        const flagAlt = option.getAttribute("data-alt") || "Suomi";
+        const name = option.getAttribute("data-name") || "Suomi";
+
+        languageSelector.setAttribute("data-lang", chosen);
+        languageSelect.value = chosen;
+        if (selectedFlag && selectedFlag.tagName === "IMG") {
+          selectedFlag.setAttribute("src", flag);
+          selectedFlag.setAttribute("alt", flagAlt);
+        }
+        if (selectedName) selectedName.textContent = name;
+        options.forEach((opt) => opt.classList.remove("active"));
+        option.classList.add("active");
+      };
+
+      selectedRoot?.addEventListener("click", () => {
+        languageSelectCustom.classList.toggle("active");
+      });
+
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          applyLanguage(option.getAttribute("data-lang") || "fi");
+          languageSelectCustom.classList.remove("active");
+        });
+      });
+
+      languageSelect.addEventListener("change", (event) => {
+        applyLanguage(event.target.value);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!languageSelectCustom.contains(event.target)) {
+          languageSelectCustom.classList.remove("active");
+        }
+      });
+
+      const browserLang = (navigator.language || "fi").toLowerCase().startsWith("fi") ? "fi" : "en";
+      const savedLang = localStorage.getItem("nexalife_lang");
+      applyLanguage(savedLang || browserLang);
+    }
+  </script>
 </body>
 </html>
