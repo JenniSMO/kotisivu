@@ -588,6 +588,12 @@ main { width: min(1100px, 92vw); margin: 0 auto; padding: 30px 0 60px; }
   list-style-position: outside;
 }
 
+.legal-page .text-card ol {
+  margin: 0 0 14px;
+  padding-left: 1.35rem;
+  list-style-position: outside;
+}
+
 .legal-page .text-card li {
   margin: 0 0 8px;
   padding-left: 0;
